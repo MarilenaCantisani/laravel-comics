@@ -27,7 +27,8 @@ Route::get('/characters', function () {
 // Route of the comics page 
 Route::get('/comics', function () {
     $data_comics = config('comics');
-    return view('comics', ['comics' => $data_comics]);
+    $icons_panel = config('icons-panel');
+    return view('comics', ['comics' => $data_comics], ['icons' => $icons_panel]);
 })->name('comics');
 
 // Route of the movies page 

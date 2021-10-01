@@ -94,6 +94,11 @@
           transform: scale(1.1);
           text-shadow: 0 0 6px $white;
         }
+        img {
+          width: auto;
+          height: 50px;
+          margin-right: 10px;
+        }
       }
     }
 }

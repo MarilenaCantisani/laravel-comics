@@ -31,9 +31,17 @@
                 </div>
         </article>
     </section>
+    {{-- Panel content --}}
     <section id="panel-content">
         <ul class="container d-flex j-content-around a-items-center">
-          inserisco contenuto
+          @foreach ($icons as $icon)
+            <li>
+                <a href="#">
+                <img src="{{$icon['url']}}" alt="{{$icon['text']}}" id="{{$icon['text']}}" />
+                {{$icon['text']}}
+                </a>
+            </li>         
+          @endforeach
         </ul>
       </section>
 @endsection
