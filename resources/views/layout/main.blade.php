@@ -8,19 +8,21 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     {{-- Favicon --}}
     <link rel="icon" href="{{asset('images/favicon.ico')}}">
-    <title>Comics</title>
+    <title>Comics | @yield('title-page')</title>
 </head>
 <body>
     {{-- HEADER --}}
-    @include('includes.header')
+    @include('includes.header', ['nav_items' => config('nav')])
     {{-- MAIN --}}
     <main>
+        @yield('content-main')
 
     </main>
     {{-- FOOTER --}}
     <footer>
 
     </footer>
-    
+    <script src="{{asset('js/app.js')}}"></script>
+    @yield('extra-script')
 </body>
 </html>
