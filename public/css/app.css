@@ -183,7 +183,7 @@ a img:hover {
   padding-top: 300px;
 }
 #content .spotlight {
-  background-image: url("../assets/img/jumbotron.jpg");
+  background-image: url("../images/jumbotron.jpg");
   background-position: top center;
   height: 300px;
   position: absolute;
@@ -200,6 +200,23 @@ a img:hover {
 }
 #content .comics-container ul li a:hover {
   text-decoration: underline;
+}
+#content .comics-container ul li a .card {
+  margin-bottom: 50px;
+  margin-right: 20px;
+}
+#content .comics-container ul li a .card .title-comic {
+  font-size: 14px;
+  margin-top: 10px;
+}
+#content .comics-container ul li a .card .img-comic-container {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+#content .comics-container ul li a .card .img-comic-container .img-comic {
+  width: 100%;
+  height: 340px;
 }
 
 .btn-content button {

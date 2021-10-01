@@ -5,7 +5,7 @@
     padding-top: 300px;
     //*Spotlight
     .spotlight {
-      background-image: url("../assets/img/jumbotron.jpg");
+      background-image: url("../images/jumbotron.jpg");
       background-position: top center;
       height: 300px;
       position: absolute;
@@ -20,6 +20,25 @@
           color: $white;
           &:hover {
             text-decoration: underline;
+          }
+          .card {
+            margin-bottom: 50px;
+            margin-right: 20px;
+            .title-comic {
+              font-size: 14px;
+              margin-top: 10px;
+            }
+            .img-comic-container {
+              height: 200px;
+              width: 100%;
+              overflow: hidden;
+              .img-comic {
+                width: 100%;
+                height: 340px;
+              }
+
+            }
+            
           }
         }
       }

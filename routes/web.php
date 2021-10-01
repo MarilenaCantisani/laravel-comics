@@ -26,7 +26,8 @@ Route::get('/characters', function () {
 
 // Route of the comics page 
 Route::get('/comics', function () {
-    return view('comics');
+    $data_comics = config('comics');
+    return view('comics', ['comics' => $data_comics]);
 })->name('comics');
 
 // Route of the movies page 
