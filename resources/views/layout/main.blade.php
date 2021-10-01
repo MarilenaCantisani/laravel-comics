@@ -16,12 +16,11 @@
     {{-- MAIN --}}
     <main>
         @yield('content-main')
-
     </main>
     {{-- FOOTER --}}
-    <footer>
-
-    </footer>
+    @include('includes.footer')
+    
+    {{-- Js file --}}
     <script src="{{asset('js/app.js')}}"></script>
     @yield('extra-script')
 </body>

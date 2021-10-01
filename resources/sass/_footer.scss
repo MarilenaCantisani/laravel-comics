@@ -1,0 +1,82 @@
+////General style top footer
+#top-footer {
+    height: 45vh;
+    background-image: url("../images/footer-bg.jpg");
+    background-position: top;
+    .container .logo-bg {
+      height: 45vh;
+      width: 600px;
+      background-image: url("../images/dc-logo-bg.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    } 
+    .row {
+        .col {
+          margin-top: 40px;
+          margin-right: 30px;
+          h4 {
+            margin: 10px 0;
+            a {
+              text-decoration: none;
+              text-transform: uppercase;
+              font-size: 22px;
+              color: $white;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        ul li a {
+          font-size: 14px;
+          color: $lightGrey;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+    }   
+}
+
+//// Style social section of the footer
+//* Style text social section
+#bottom-footer {
+    background-color: $grey;
+}
+.social-section {
+    height: 12vh;
+    span a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $blue;
+      font-weight: bold;
+      padding: 0 25px;
+      &:hover {
+        text-shadow: 0 0 2px $blue;
+      }
+    }
+  }
+  //* Style icons social section
+  a img {
+    width: 28px;
+    margin: 0 6px;
+    &:hover {
+      transform: scale(1.1);
+    }
+}
+
+//// Footer button style
+#bottom-footer button {
+    border-radius: 0;
+    border: 1px solid $blue;
+    padding: 12px 10px;
+    background-color: $grey;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $white;
+      font-weight: bolder;
+    }
+    &:hover {
+      background-color: $blue;
+    }
+  }

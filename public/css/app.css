@@ -13,6 +13,13 @@ body {
   margin: 0 auto;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -90,4 +97,82 @@ header li a {
 header li a:hover {
   color: #0476f2;
   border-bottom: 1px solid #0476f2;
+}
+
+#top-footer {
+  height: 45vh;
+  background-image: url("../images/footer-bg.jpg");
+  background-position: top;
+}
+#top-footer .container .logo-bg {
+  height: 45vh;
+  width: 600px;
+  background-image: url("../images/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#top-footer .row .col {
+  margin-top: 40px;
+  margin-right: 30px;
+}
+#top-footer .row .col h4 {
+  margin: 10px 0;
+}
+#top-footer .row .col h4 a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: white;
+}
+#top-footer .row .col h4 a:hover {
+  text-decoration: underline;
+}
+#top-footer .row ul li a {
+  font-size: 14px;
+  color: #959595;
+}
+#top-footer .row ul li a:hover {
+  text-decoration: underline;
+}
+
+#bottom-footer {
+  background-color: #303030;
+}
+
+.social-section {
+  height: 12vh;
+}
+.social-section span a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #0476f2;
+  font-weight: bold;
+  padding: 0 25px;
+}
+.social-section span a:hover {
+  text-shadow: 0 0 2px #0476f2;
+}
+
+a img {
+  width: 28px;
+  margin: 0 6px;
+}
+a img:hover {
+  transform: scale(1.1);
+}
+
+#bottom-footer button {
+  border-radius: 0;
+  border: 1px solid #0476f2;
+  padding: 12px 10px;
+  background-color: #303030;
+}
+#bottom-footer button a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bolder;
+}
+#bottom-footer button:hover {
+  background-color: #0476f2;
 }
