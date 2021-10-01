@@ -1,0 +1,61 @@
+//// UTILITY
+  //* General
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  ul li {
+    list-style-type: none;
+    a {
+      text-decoration: none;
+    }
+  }
+  .clickable {
+    cursor: pointer
+  }
+  //* Sizing 
+  .w-100 {
+    width: 100%;
+  }
+  //* Text style
+  .uppercase {
+    text-transform: uppercase;
+  }
+  //// Flex 
+  .d-flex {
+    display: flex;
+  }
+  .f-wrap {
+    flex-wrap: wrap;
+  }
+  //Justify content
+  .j-content-between {
+    justify-content: space-between;
+  }
+  .j-content-center {
+    justify-content: center;
+  }
+  .j-content-around {
+    justify-content: space-around;
+  }
+  .j-content-evenly {
+    justify-content: space-evenly;
+  }
+  //Align items
+  .a-items-center {
+    align-items: center;
+  }
+  //* Bg style 
+  .bg-style {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  //* Active effects
+  .active {
+    color: #0476f2;
+    border-bottom: 1px solid #0476f2;
+  }

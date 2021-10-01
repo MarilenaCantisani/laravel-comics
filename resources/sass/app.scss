@@ -1,1 +1,8 @@
-//
+//// Import all scss files
+//* Generals
+@import 'reset';
+@import 'vars';
+@import 'utility';
+//* Header
+@import 'header';
+

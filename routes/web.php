@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $links = config('nav');
+    return view('layout.main', ['nav_items' => $links]);
 });
