@@ -1,6 +1,6 @@
 <header class="container d-flex j-content-between a-items-center">
     {{-- Logo --}}
-    <figure><a href=""><img id="logo" src="{{asset('images/dc-logo.png')}}" alt="Logo-Comics" /></a></figure>
+    <figure><a href="{{route('home')}}"><img id="logo" src="{{asset('images/dc-logo.png')}}" alt="Logo-Comics" /></a></figure>
     {{-- Nav bar --}}
     <nav>
       <ul class="uppercase d-flex">
@@ -11,4 +11,5 @@
         @endforeach   
       </ul>
     </nav>
+    
   </header>

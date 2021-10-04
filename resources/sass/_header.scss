@@ -3,7 +3,8 @@ header {
     height: 12vh;
     //* List style
     #logo {
-      width: 60px;
+      width: 70px;
+      min-height: 70px;
     }
     li a {
       padding: 10px;
@@ -15,4 +16,5 @@ header {
         border-bottom: 1px solid $blue;
       }
     }   
+    
 };

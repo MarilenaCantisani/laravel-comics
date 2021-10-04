@@ -21,9 +21,6 @@
               text-transform: uppercase;
               font-size: 22px;
               color: $white;
-              &:hover {
-                text-decoration: underline;
-              }
             }
           }
         }
@@ -31,7 +28,7 @@
           font-size: 14px;
           color: $lightGrey;
           &:hover {
-            text-decoration: underline;
+            color: $blue;
           }
         }
     }   
@@ -57,6 +54,7 @@
   }
   //* Style icons social section
   a img {
+    max-height: 30px;
     width: 28px;
     margin: 0 6px;
     &:hover {

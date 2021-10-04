@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 //// Route of the main layout page 
 Route::get('/', function () {
-    return view('layout.main');
+    return view('home');
 })->name('home');
 
 //// Routes of navigation bar entries page 
