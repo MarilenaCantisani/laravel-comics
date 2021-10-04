@@ -4,9 +4,7 @@
     
 
 @section('content-main')
-    <section id="content">
-        {{-- Spotlight --}}
-        <div class="spotlight bg-style w-100"></div>
+    <section id="content">     
             {{-- Comic Book section container --}}
             <article class="comics-container container">
                 <button class="btn-series clickable">CURRENT SERIES</button>

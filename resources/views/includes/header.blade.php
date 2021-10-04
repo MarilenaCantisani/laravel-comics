@@ -12,4 +12,8 @@
       </ul>
     </nav>
     
+    
   </header>
+   {{-- Spotlight --}}
+   <div class="spotlight bg-style w-100"></div>
+   

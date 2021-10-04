@@ -100,6 +100,12 @@ header li a:hover {
   border-bottom: 1px solid #0476f2;
 }
 
+.spotlight {
+  background-image: url("../images/jumbotron.jpg");
+  background-position: top center;
+  height: 300px;
+}
+
 #top-footer {
   height: 45vh;
   background-image: url("../images/footer-bg.jpg");
@@ -179,14 +185,6 @@ a img:hover {
 #content {
   background-color: #1c1c1c;
   position: relative;
-  padding-top: 300px;
-}
-#content .spotlight {
-  background-image: url("../images/jumbotron.jpg");
-  background-position: top center;
-  height: 300px;
-  position: absolute;
-  top: 0;
 }
 #content .comics-container ul {
   margin-top: 10px;
@@ -291,4 +289,20 @@ img {
 .card .img-comic {
   height: 180px;
   overflow: hidden;
+}
+
+.details-comic {
+  position: relative;
+}
+.details-comic::before {
+  content: "";
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  background-color: #0476f2;
+}
+.details-comic .img-thumb {
+  min-height: 200px;
+  position: absolute;
+  top: -160px;
 }

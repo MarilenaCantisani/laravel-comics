@@ -1,0 +1,15 @@
+.details-comic {
+    position: relative;
+    &::before {
+        content: '';
+        display: inline-block;
+        height: 50px;
+        width: 100%;
+        background-color: $blue;
+    }
+    .img-thumb {
+        min-height: 200px;
+        position: absolute;
+        top: -160px;
+    }
+}
