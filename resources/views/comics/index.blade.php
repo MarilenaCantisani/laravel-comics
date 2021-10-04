@@ -13,11 +13,11 @@
                 <ul class="d-flex f-wrap">
                    @foreach ($comics as $comic)
                         <li>
-                            <a href="#">
+                            <a href="{{route('comics.show', ['id' => $loop->index])}}">
                                 <div class="card">
                                     {{-- Image of the comic --}}
                                     <figure class="img-comic-container">
-                                      <img class="img-comic" src="{{$comic['thumb']}}" alt="{{$comic['title']}}" />
+                                        <img class="img-comic" src="{{$comic['thumb']}}" alt="{{$comic['title']}}" />
                                     </figure>
                                     {{-- Title of the comic --}}
                                     <figcaption class="title-comic uppercase">{{$comic['title']}}</figcaption>

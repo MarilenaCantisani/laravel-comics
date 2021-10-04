@@ -24,12 +24,23 @@ Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
 
-// Route of the comics page 
+//// COMICS 
 Route::get('/comics', function () {
-    $data_comics = config('comics');
-    $icons_panel = config('icons-panel');
-    return view('comics', ['comics' => $data_comics], ['icons' => $icons_panel]);
-})->name('comics');
+    $comics = config('comics');
+    $icons = config('icons-panel');
+    return view('comics.index', compact('comics', 'icons'));
+})->name('comics.index');
+
+//* SINGLE COMIC
+Route::get('/comics/{id}', function ($id) {
+    $comics = config('comics');
+    if (is_numeric($id) && $id >= 0 && $id < count($comics)) {
+        $comic = $comics[$id];
+        return view('comics.show', compact('comic'));
+    } else {
+        abort('404');
+    }
+})->name('comics.show');
 
 // Route of the movies page 
 Route::get('/movies', function () {
