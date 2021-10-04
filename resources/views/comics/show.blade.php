@@ -1,56 +1,76 @@
 @extends('layout.main')
 
-@section('title-page', 'Comics | nome')
+@section('title-page', $comic['title'] )
     
 
 @section('content-main')
-    <section class="details-comic ">      
-        <div class="details container">
+    <section class="details-comic">
+        <div class="container">
             <img class="img-thumb" src="{{ $comic['thumb'] }}" alt="">
             <h1>{{ $comic['title']}}</h1>
-            <div>
-                <span>
-                    price
-                </span>
-                <span>
-                    disponibility
-                </span>
-                <button>check disponibility</button>
+        </div>
+        <div class="info-box container">
+            <div class="details ">
+                <div class="info-price">
+                    <div>
+                        <span class= "light-green">U.S. Price:</span>  
+                        {{$comic['price']}}
+                    </div>
+                    <span  class="light-green">AVAILABLE</span>
+                    <span>Check Availability</span>
+                </div>
+                <p class="description">
+                    {{$comic['description']}}
+                </p>
             </div>
-            <p>
-                description
-            </p>
-    
+            <div class="adv">
+                <h5>ADVERTISEMENT</h5>
+                <img src="{{asset('images/adv.jpg')}}" alt="">
+            </div>
 
         </div>
-        <div class="adv container">
-            <h6>ADV</h6>
-            <img src="{{asset('images/adv.jpg')}}" alt="">
-        </div>
+        
+
     </section>
-    <section class="info-comic container">
-        <div class="talent">
-            <div>
-                Art by: <a href="">artists</a> 
+    <section class="bg-grey b-1">
+        <div class="info-comic container">
+            <div class="talent">
+                <h6>Talent</h6>
+                <div class="artists">
+                    <span class="title-row">Art by:</span> 
+                    <span>
+                        @foreach ($comic['artists'] as $artist)
+                        <a href="#">{{$artist}}</a>,  
+                        @endforeach
+                    </span>            
+                </div>
+                <div class="writers">
+                    <span class="title-row">Written by:</span>
+                    <span>
+                        @foreach ($comic['writers'] as $writer)
+                        <a href="#">{{$writer}}</a>,  
+                        @endforeach
+                    </span>
+    
+                </div>
+    
             </div>
-            <div>
-                Written by: <a href="">writers</a>
-
+            <div class="specs">
+                <h6>Specs</h6>
+                <div class="series">
+                    Series: <a href="#"> {{$comic['series']}}</a>
+                </div>
+                <div class="price">
+                    U.S. Price: {{$comic['price']}}
+                </div>
+                <div class="date">
+                    <time>On sale date: {{$comic['sale_date']}}</time>
+                </div>
+    
             </div>
 
         </div>
-        <div class="specs">
-            <div>
-                Series: <a href="">series</a>
-            </div>
-            <div>
-                U.S. Price: price
-            </div>
-            <div>
-                <time>sale_date</time>
-            </div>
-
-        </div>
+        
     </section>
     
 @endsection

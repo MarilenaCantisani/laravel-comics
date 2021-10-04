@@ -82,6 +82,18 @@ ul li a {
   border-bottom: 1px solid #0476f2;
 }
 
+.light-green {
+  color: #96e996;
+}
+
+.bg-grey {
+  background-color: #dadada;
+}
+
+.b-1 {
+  border: 1px solid #adadad;
+}
+
 header {
   height: 12vh;
 }
@@ -294,6 +306,12 @@ img {
 .details-comic {
   position: relative;
 }
+.details-comic .img-thumb {
+  min-height: 200px;
+  position: absolute;
+  top: -160px;
+}
+
 .details-comic::before {
   content: "";
   display: inline-block;
@@ -301,8 +319,99 @@ img {
   width: 100%;
   background-color: #0476f2;
 }
-.details-comic .img-thumb {
+.details-comic h1 {
+  text-transform: uppercase;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+.details-comic .info-price {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  justify-content: space-around;
+  background-color: #51aa51;
+  color: white;
+}
+
+.info-box {
+  display: flex;
+}
+.info-box .details {
+  flex-basis: 800px;
+  margin-right: 40px;
+}
+.info-box .details .description {
+  color: #6b6b6b;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.info-box .adv {
+  flex-basis: 400px;
+}
+.info-box .adv h5 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #636363;
+  position: relative;
+  left: 100px;
+  top: -60px;
+}
+.info-box .adv img {
+  width: 220px;
   min-height: 200px;
-  position: absolute;
-  top: -160px;
+  position: relative;
+  top: -56px;
+}
+
+.info-comic {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.info-comic h6 {
+  font-size: 20px;
+  color: #070730;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #adadad;
+}
+.info-comic .talent {
+  flex-basis: 50%;
+  margin-right: 80px;
+}
+.info-comic .talent a {
+  text-decoration: none;
+  color: #0476f2;
+}
+.info-comic .talent .artists {
+  display: flex;
+  border-bottom: 1px solid #adadad;
+  padding: 10px 0;
+}
+.info-comic .talent .artists .title-row {
+  color: #3d3d3d;
+}
+.info-comic .talent .writers {
+  display: flex;
+  border-bottom: 1px solid #adadad;
+  padding: 10px 0;
+}
+.info-comic .talent .writers .title-row {
+  color: #3d3d3d;
+}
+.info-comic .specs {
+  flex-basis: 50%;
+}
+.info-comic .specs .series, .info-comic .specs .price, .info-comic .specs .date {
+  display: flex;
+  border-bottom: 1px solid #adadad;
+  padding: 10px 0;
+}
+.info-comic .specs .series a, .info-comic .specs .price a, .info-comic .specs .date a {
+  text-decoration: none;
+  color: #0476f2;
+  text-transform: uppercase;
 }
